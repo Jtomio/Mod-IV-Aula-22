@@ -1,0 +1,55 @@
+form > div, fieldset, fieldset > div {
+    margin-bottom: 10px;
+    padding: 5px 0;
+}
+form {
+    width: 700px;
+}
+fieldset{
+    padding-left: 0;
+    border-radius: 5px;
+}
+textarea {
+    vertical-align: text-top;
+    width: 500px;
+    height: 150px;
+    border-radius: 5px;
+}
+input[type=text], input[type=mail], select {
+    width: 500px;
+    border-radius: 5px;
+    padding: 5px;
+}
+label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    font-weight: 700;   /*torna o texto negrito */
+}
+div .cadastro {
+    padding: 150px;
+}
+.cadastro label {
+    width: 300px;
+    text-align: left;
+}
+legend {
+    color: #0000cc;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+h1 {
+    text-shadow: 2px 2px 5px;
+}
+.assunto {
+    margin-left: 1%;
+}
+.cadastro {
+    align-content: center;
+    margin-left: 22%;
+}
+.buttom {
+    border-radius: 10px;
+    padding: 4px;
+    margin-left: 30%;
+}

@@ -1,12 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Mod Iv - Aula 22 Prática</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <h1>Contato</h1>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <div>
+          <label for="nome">Nome:</label>
+          <input
+            type="text"
+            name="nome"
+            id="nome"
+            class="obrigatorio"
+            placeholder="Nome Completo"
+            required
+          />
+        </div>
+        <div>
+          <label for="email">E-mail: </label>
+          <input
+            type="mail"
+            name="email"
+            id="email"
+            class="obrigatorio"
+            required
+          />
+        </div>
+      </fieldset>
+      <div>
+        <label for="assunto" class="assunto">Assunto: </label>
+        <select name="assunto" id="assunto">
+          <option value="" selected>Escolher</option>
+          <option value="relcamacao">Reclamação</option>
+          <option value="sugestao">Sugestão</option>
+          <option value="elogio">Elogio</option>
+          <option value="outro">Outro</option>
+        </select>
+      </div>
+      <!-- <fieldset>
+            <legend>Assunto: </legend>
+            <input type="radio" name="assunto" value="reclamacao" id="reclamacao">
+            <label for="reclamacao">Reclamação</label>
+            <input type="radio" name="assunto" value="sugestao" id="sugestao">
+            <label for="sugestao">Sugestão</label>
+            <input type="radio" name="assunto" value="elogio" id="elogio">
+            <label for="elogio">Elogio</label>
+            <input type="radio" name="assunto" value="outro" id="outro">
+            <label for="outro">Outro</label>
+
+        </fieldset> -->
+      <div>
+        <label for="mesagem">Mensagem</label>
+        <textarea
+          name="mesagem"
+          id="mensagem"
+          class="obrigatorio"
+          placeholder="Digite sua mensagem..."
+          required
+        ></textarea>
+      </div>
+      <div class="cadastro">
+        <input type="checkbox" name="cadastro" id="cadastro" />
+        <label for="cadastro">Desejo receber E-mails informativos.</label>
+      </div>
+      <div class="buttom">
+        <input type="submit" class="buttom" value="Enviar mensagem" />
+      </div>
+    </form>
+  </body>
 </html>
